@@ -18,7 +18,7 @@ class Stairs
     {
         if (stairsNumber <= 0)
         {
-            Console.WriteLine("Число ступенек не может быть <= 0\n");
+            Console.WriteLine("Число ступенек не может быть <= 0 \n");
         }
         else
         {
