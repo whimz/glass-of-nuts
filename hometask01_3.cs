@@ -117,42 +117,6 @@ class Digits
                 {
                     if (s[i] >= 48 && s[i] <= 57) //если символ - цифра
                     {
-                        switch ((int)Char.GetNumericValue(s[i]))
-                        {
-                        case 0:
-                            Console.ForegroundColor = ConsoleColor.Cyan;
-                            break;
-                        case 1:
-                            Console.ForegroundColor = ConsoleColor.Cyan;
-                            break;
-                        case 2:
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            break;
-                        case 3:
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            break;
-                        case 4:
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            break;
-                        case 5:
-                            Console.ForegroundColor = ConsoleColor.Magenta;
-                            break;
-                        case 6:
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            break;
-                        case 7:
-                            Console.ForegroundColor = ConsoleColor.White;
-                            break;
-                        case 8:
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            break;
-                        case 9:
-                            Console.ForegroundColor = ConsoleColor.DarkRed;
-                            break;
-                        default:
-                            break;
-                        }
-
                         // (int)Char.GetNumericValue(s[i]) говорит какую цифру нужно выбрать из массива digits[i] для отрисовки
                         Console.Write(digits[(int)Char.GetNumericValue(s[i])][j] + " ");
                         Console.ForegroundColor = ConsoleColor.Gray;
