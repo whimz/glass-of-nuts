@@ -45,7 +45,7 @@ namespace hometask01_02
                     {
                         Console.Write("###");
                     }
-                }
+                } 
                 Console.WriteLine();
             }
             Console.ForegroundColor = ConsoleColor.White;
