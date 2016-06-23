@@ -12,7 +12,7 @@
 Др. символов – 0
 */
 
-
+ 
 using System;
 
 namespace _03_2
