@@ -36,7 +36,6 @@ namespace _03_1
             return true;
         }
     }
-
     
     class Program
     {
