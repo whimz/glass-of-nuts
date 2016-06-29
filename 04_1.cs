@@ -101,7 +101,6 @@ namespace ht_04_Add
             {
                 this.city = city;
             }
-               
         }
 
         public void SetDistrict(string district)
@@ -179,7 +178,6 @@ namespace ht_04_Student
         private uint[] exams;// экзамены
 
         public Student(){}
-        
 
         public Student(FullName fullName, Address address, DateTime birthDate)
         {
@@ -208,7 +206,6 @@ namespace ht_04_Student
             credits = new uint[subjQuantity];
             termWork = new uint[subjQuantity];
             exams = new uint[subjQuantity];
-
         }
 
         public void SetFullName(FullName fullName)
@@ -261,7 +258,6 @@ namespace ht_04_Student
             credits = new uint[subjQuantity];
             termWork = new uint[subjQuantity];
             exams = new uint[subjQuantity];
-
         }
 
         public uint GetSubjectsQuantity()
@@ -468,18 +464,13 @@ namespace ht_04_Group
                     group[i].SetExamMark(group[i].GetSubjectName(j), Convert.ToUInt16(rnd.Next(1, 12)));
                     group[i].SetTermWorkMark(group[i].GetSubjectName(j), Convert.ToUInt16(rnd.Next(1, 12)));
                 }
-
-                
-
             }
         }
 
         public Student[] GetStudents()
         {
             Student[] st = new Student[group.Length];
-
             Array.Copy(group, st, group.Length);
-            
             return st; 
         }
 
@@ -637,7 +628,6 @@ namespace ht_04_Group
             uint minMark = 12;
             for (int i = 0; i < group.Length; i++)
             {
-                
                 for (int j = 0; j < group[i].GetSubjectsQuantity() - 1; j++)
                 {
                     if (group[i].GetCreditMark(group[i].GetSubjectName(Convert.ToUInt16(j))) +
