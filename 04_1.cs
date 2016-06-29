@@ -369,8 +369,8 @@ namespace ht_04_Student
             Console.WriteLine("Дата рождения: {0}:{1}:{2}",
                 birthDate.Day, birthDate.Month, birthDate.Year);
 
-            //Console.WriteLine("г. {0}, {1} район, улица {2}, дом {3}, кв. {4}",
-            //    address.city, address.district, address.street, address.building, address.apartment);
+            Console.WriteLine("г. {0}, {1} район, улица {2}, дом {3}, кв. {4}",
+                address.city, address.district, address.street, address.building, address.apartment);
 
             Console.WriteLine("Телефон {0}", phoneNumber);
 
