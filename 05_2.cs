@@ -20,7 +20,7 @@ namespace _05_2_fraction
                 this.numerator = numerator;
                 this.denominator = denominator;
             }
-        }
+        } 
 
         public int Numerator
         {
