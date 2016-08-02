@@ -109,7 +109,7 @@ namespace _06_2
         }
     }
 
-    abstract class Phones : Item
+    class Phones : Item
     {
         public Phones(Double price, String vendor, DateTime issueDate, Int32 warranty, String model) :
             base(price, vendor, issueDate, warranty, model)
