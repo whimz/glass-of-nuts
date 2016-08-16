@@ -27,14 +27,18 @@ namespace _08_1
             public Int32 Quantity { get { return quantity; } set { quantity = value; } }
             public Double Price { get { return price; } set { price = value; } }
             public Double Discount { get { return discount; } set { discount = value; } }
-
-
         }
+        
         List<Item> items;
         Double total;
                 
         public void AddItem()
         {
+            if (items == null)
+            {
+                items = new List<Item>();
+            }
+            
             Item i = new Item();
 
             Int32 option = 1;
@@ -53,10 +57,6 @@ namespace _08_1
                 Console.WriteLine("Скидка на товар:");
                 i.Discount = Double.Parse(Console.ReadLine());
 
-                if (items == null)
-                {
-                    items = new List<Item>();
-                }
                 items.Add(i);
 
                 Console.WriteLine("Добавить товар? Да - 1 / Нет - 0");
@@ -81,8 +81,7 @@ namespace _08_1
             }
 
             Console.WriteLine("-------------------------------------------------------");
-            Console.WriteLine("Всего:\t\t\t" + total.ToString());           
-            
+            Console.WriteLine("Всего:\t\t\t" + total.ToString());          
         }
 
     }
